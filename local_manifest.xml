@@ -13,7 +13,7 @@
 <remove-project name="CyanogenMod/android_frameworks_av" />
 <project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 <!--Hardware-->
-<project path="hardware/samsung" name="JDCTeam/android_hardware_samsung" remote="github" revision="cm-12.1" />
+<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
 <!--Hardware for ArchiDroid optimizations-->
 <remove-project name="CyanogenMod/android_hardware_qcom_display" revision="cm-12.1-caf-8960" />
 <project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-cm-12.1-caf-8960" />
@@ -27,4 +27,6 @@
 <remove-project name="CyanogenMod/android_vendor_cm" />
 <project path="vendor/cm" name="JDCTeam/android_vendor_cm" remote="github" revision="opt-cm-12.1" />
 <project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="master" />
+<!-- Alucard24 Kernel -->
+<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-5.1" />
 </manifest>
