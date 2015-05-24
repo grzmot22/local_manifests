@@ -18,7 +18,7 @@
 <remove-project name="CyanogenMod/android_hardware_qcom_display" revision="cm-12.1-caf-8960" />
 <project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-cm-12.1-caf-8960" />
 <!--Stock CM kernel for now-->
-<project path="kernel/samsung/jf" name="JDCTeam/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
+<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
 <!--OTA Updates-->
 <project path="packages/apps/OTAUpdates" name="JDCTeam/OTAUpdates" remote="github" revision="aosp" />
 <!--Proprietary vendor blobs-->
