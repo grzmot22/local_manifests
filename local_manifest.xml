@@ -36,7 +36,7 @@
 
 	<!--Hardware for ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
-	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-cm-12.1-caf-8960" />
+	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-5.1-caf-8960" />
 
 	<!--Stock CM kernel for now-->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
