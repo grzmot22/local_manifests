@@ -14,6 +14,13 @@
 <!--Framework-->
 <remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
 <project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
+<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
+<project path="frameworks/base" name="JDCTeam/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
+<!--Packages-->
+<remove-project name="CyanogenMod/android_packages_apps_Gallery2" path="packages/apps/Gallery2" />
+<project path="packages/apps/Gallery2" name="JDCTeam/android_packages_apps_Gallery2" remote="github" revision="opt-cm-12.1" />
+<remove-project name="CyanogenMod/android_packages_apps_Camera2" path="packages/apps/Camera2" />
+<project path="packages/apps/Camera2" name="JDCTeam/android_packages_apps_Camera2" remote="github" revision="opt-cm-12.1" />
 <!--Hardware-->
 <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
 <!--Hardware for ArchiDroid optimizations-->
