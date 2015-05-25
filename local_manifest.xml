@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <!--Android_build with ArchiDroid optimizations-->
-<remove-project name="CyanogenMod/android_build" />
+<remove-project name="CyanogenMod/android_build" path="build" />
 <project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-12.1" >
   <copyfile src="core/root.mk" dest="Makefile" />
 </project>
@@ -10,12 +10,12 @@
 <project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1" />
 <project path="device/samsung/qcom-common" name="JDCTeam/android_device_samsung_qcom-common" remote="github" revision="cm-12.1" />
 <!--Framework-->
-<remove-project name="CyanogenMod/android_frameworks_av" />
+<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
 <project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 <!--Hardware-->
 <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
 <!--Hardware for ArchiDroid optimizations-->
-<remove-project name="CyanogenMod/android_hardware_qcom_display" revision="cm-12.1-caf-8960" />
+<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
 <project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-cm-12.1-caf-8960" />
 <!--Stock CM kernel for now-->
 <project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
@@ -24,7 +24,7 @@
 <!--Proprietary vendor blobs-->
 <project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-unified-12.1" />
 <!--Vendor-->
-<remove-project name="CyanogenMod/android_vendor_cm" />
+<remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm" />
 <project path="vendor/cm" name="JDCTeam/android_vendor_cm" remote="github" revision="opt-cm-12.1" />
 <project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="cm-12.1-custom" >
   <copyfile src="build.sh" dest="build.sh" />
@@ -32,7 +32,7 @@
 <!-- Alucard24 Kernel -->
 <project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-5.1" />
 <project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="aospv2-5.1" />
-<!-- <project path="kernel/arm-eabi-5.1" name="arter97/arm-eabi-5.1" remote="github" revision="master" /> -->
+<project path="kernel/arm-eabi-5.1" name="arter97/arm-eabi-5.1" remote="github" revision="master" />
 <!-- Linaro 4.9.3 -->
 <project path="kernel/cr-arm-eabi-4.9.3" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
 </manifest>
