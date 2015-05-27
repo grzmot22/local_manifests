@@ -10,6 +10,10 @@
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 
+	<!--libcore-->
+	<remove-project name="CyanogenMod/android_libcore" path="libcore" />
+	<project path="libcore" name="JDCTeam/android_libcore" remote="github" revision="opt-cm-12.1" />
+
 	<!--Device tree-->
 	<project path="device/samsung/jflte" name="JDCTeam/android_device_samsung_jflte" remote="github" revision="opt-cm-12.1" />
 	<project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1" />
@@ -31,6 +35,8 @@
 	<remove-project name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" />
 	<project path="packages/services/Telephony" name="JDCTeam/android_packages_services_Telephony" remote="github" revision="opt-cm-12.1" />
 	<project path="packages/wallpapers/SunBeam" name="JDCTeam/android_packages_wallpapers_SunBeam" remote="github" revision="opt-cm-12.1" />
+	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
+	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 
 	<!--Hardware-->
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
@@ -62,5 +68,10 @@
 
 	<!-- Linaro 4.9.3 -->
 	<project path="kernel/cr-arm-eabi-4.9.3" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
+
+	<!--ArchiToolchain
+	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.1-arm-linux-gnueabihf" />-->
+
 
 </manifest>
