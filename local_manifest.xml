@@ -2,7 +2,9 @@
 <manifest>
 
 	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="JDCTeam/local_manifests" remote="github" revision="opt-cm-12.1" />
+	<project path=".repo/local_manifests" name="JDCTeam/local_manifests" remote="github" revision="opt-cm-12.1">
+		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
+	</project>
 
 	<!--Android_build with ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_build" path="build" />
