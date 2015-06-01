@@ -26,7 +26,6 @@
 	<project path="frameworks/base" name="JDCTeam/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
 
 	<!--Packages-->
-	<project path="packages/wallpapers/SunBeam" name="JDCTeam/android_packages_wallpapers_SunBeam" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 
