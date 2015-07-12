@@ -8,8 +8,7 @@
 
 	<!--Android_build with ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_build" path="build" />
-	<!-- <project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-12.1" > -->
-	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-12.1-test" >
+	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-12.1" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 
@@ -24,8 +23,7 @@
 
 	<!--Framework-->
 	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
-	<!-- <project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1" /> -->
-	<project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1-test" />
+	<project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
 	<project path="frameworks/base" name="JDCTeam/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
 
@@ -36,9 +34,9 @@
 	<!--Hardware-->
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
 
-	<!--Hardware for ArchiDroid optimizations
+	<!--Hardware for ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
-	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-5.1-caf-8960" /> -->
+	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-5.1-caf-8960" />
 
 	<!--Stock CM kernel for now-->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
