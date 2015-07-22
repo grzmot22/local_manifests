@@ -31,6 +31,10 @@
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 
+	<!--Prebuilt WebView-->
+	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
+	<project path="frameworks/webview" name="arter97/android_frameworks_webview" remote="github" revision="cm-12.1" />
+
 	<!--Hardware-->
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
 
