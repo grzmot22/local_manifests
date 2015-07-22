@@ -40,6 +40,9 @@
 
 	<!--Stock CM kernel for now-->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
+	
+	<!--STweaks-->
+	<project path="packages/apps/STweaks" name="AOSP-JF/STweaks" remote="github" revision="aosp-5.1" />
 
 	<!--OTA Updates-->
 	<project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
