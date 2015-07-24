@@ -33,7 +33,7 @@
 
 	<!--Prebuilt WebView-->
 	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
-	<project path="frameworks/webview" name="arter97/android_frameworks_webview" remote="github" revision="cm-12.1" />
+	<project path="frameworks/webview" name="ProjectX-Android/frameworks_webview" remote="github" revision="lollipop-5.1" />
 
 	<!--Hardware-->
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
