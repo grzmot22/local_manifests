@@ -2,13 +2,13 @@
 <manifest>
 
 	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="JDCTeam/local_manifests" remote="github" revision="opt-cm-12.1">
+	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-12.1">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
 	</project>
 
 	<!--Android_build with ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_build" path="build" />
-	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-12.1" >
+	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-12.1" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 
@@ -23,13 +23,13 @@
 
 	<!--Framework-->
 	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
-	<project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
+	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
-	<project path="frameworks/base" name="JDCTeam/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
+	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
 
 	<!--Packages-->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
-	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
+	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 
 	<!--Prebuilt WebView-->
 	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
