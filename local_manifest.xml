@@ -66,8 +66,8 @@
 	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="aospv2-5.1" />
 	<project path="kernel/arm-eabi-5.1" name="arter97/arm-eabi-5.1" remote="github" revision="master" />
 
-	<!-- Linaro 4.9.3 -->
-	<project path="kernel/cr-arm-eabi-4.9.3" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
+	<!-- Linaro 4.9.4 -->
+	<project path="kernel/cr-arm-eabi-4.9.4" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
 
 	<!--ArchiToolchain
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
