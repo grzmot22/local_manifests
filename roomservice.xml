@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!--Pyramid device tree-->
+	<remote name="TeamBliss-LP" fetch="https://github.com/TeamBliss-LP/" review="review.blissroms.com"/>
+<remote name="private" fetch="ssh://git@github.com"/>
+<remote name="cm" fetch="https://github.com/CyanogenMod/"/>
+<remote name="TeamBliss-Devices" fetch="https://github.com/TeamBliss-Devices/"/>
+<remote name="TeamBliss" fetch="https://github.com/TeamBliss/"/>
+<remote name="tm" fetch="https://github.com/TheMuppets/"/>
+<remote name="tv" fetch="https://github.com/Team-Validus/"/>
+<remote name="vr" fetch="https://github.com/VanirAOSP/"/>
+<remote name="lsd" fetch="https://github.com/LiquidSmooth-Devices/"/>
+<remote name="bitbucket" fetch="https://bitbucket.org/"/>
+  <!--Pyramid device tree-->
 <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-12.1" />
 
 <!--Hardware-->
@@ -37,6 +47,4 @@
   <!-- GCC 5.1 -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1" name="TeamBliss-LP/arm-eabi-5.1" remote="github" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master" />
-
 </manifest>
-
