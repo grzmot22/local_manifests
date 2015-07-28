@@ -1,0 +1,40 @@
+<!--Pyramid device tree-->
+<project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-12.1" />
+
+<!--Hardware-->
+<project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
+<project name="ivanich/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
+<project name="ivanich/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
+<!--Kernel-->
+<project name="ivanich/android_kernel_htc_pyramid" path="kernel/htc/pyramid" remote="github" revision="cm-12.0" />
+<!--Proprietary vendor blobs-->
+<project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-12.1" />
+  <!-- SABERMOD ROM TOOLCHAINS -->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="arm-linux-androideabi-4.8" remote="tv" revision="lp" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="arm-linux-androideabi-4.9" remote="tv" revision="lp" /> -->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.0-sm" name="SmokeyMcBong/sm-arm-androideabi-5.0" remote="bitbucket" revision="master" /> -->
+  <!-- SAMBERMOD KERNEL TOOLCAHINS -->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7-sm" name="arm-eabi-4.7" remote="tv" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="arm-eabi-4.8" remote="tv" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="arm-eabi-4.9" remote="tv" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.10-sm" name="arm-eabi-4.10" remote="tv" revision="master" /> --> 
+  <!-- <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-saber" name="RobbieL811/Sabermod" remote="github" revision="arm-eabi-4.9" /> -->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.0-sm" name="SmokeyMcBong/sm-arm-eabi-5.0" remote="bitbucket" revision="master" /> -->
+   <!-- LINARO ROM TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1-linaro" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
+
+  <!-- LINARO KERNEL TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-linaro" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1-linaro" name="UBERTC/arm-eabi-5.1" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-linaro" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/linaro" name="linaro_toolchains_2015" remote="vr" revision="L5" /> 
+
+  <!-- GCC 5.1 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1" name="TeamBliss-LP/arm-eabi-5.1" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master" />
+
+</manifest>
+
