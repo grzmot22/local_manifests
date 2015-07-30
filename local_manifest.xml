@@ -4,7 +4,7 @@
 	<!--Self update this manifest-->
 	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-12.1">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml"
-		<copyfile src="roomservice.xml" dest="roomservice.xml"/>
+		<copyfile src="roomservice.xml" dest="roomservice.xml" />
 	</project>
 
 	<!--Android_build with ArchiDroid optimizations-->
