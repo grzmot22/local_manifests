@@ -32,7 +32,7 @@
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_packages_apps_Terminal" path="packages/apps/Terminal" />
-	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Terminal" remote="github" revision="opt-cm-12.1" />
+	<project path="packages/apps/Terminal" name="JDCTeam/android_packages_apps_Terminal" remote="github" revision="opt-cm-12.1" />
 	<!--Prebuilt WebView-->
 	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
 	<project path="frameworks/webview" name="ProjectX-Android/frameworks_webview" remote="github" revision="lollipop-5.1" />
