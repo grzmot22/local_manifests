@@ -32,8 +32,8 @@
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 	<project path="packages/apps/sms-backup-plus" name="jberkel/sms-backup-plus" remote="github" revision="master" />
-	
-	
+	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
+	<project path="bootable/recovery" name="grzmot22/android_bootable_recovery" remote="github" revision="android-5.1" />
 	<!--Prebuilt WebView-->
 	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
 	<project path="frameworks/webview" name="ProjectX-Android/frameworks_webview" remote="github" revision="lollipop-5.1" />
