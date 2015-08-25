@@ -15,7 +15,7 @@
 
 	<!--libcore-->
 	<remove-project name="CyanogenMod/android_libcore" path="libcore" />
-	<project path="libcore" name="JDCTeam/android_libcore" remote="github" revision="opt-cm-12.1" />
+	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-12.1" />
 
 	<!--Device tree-->
 	<project path="device/samsung/jflte" name="JDCTeam/android_device_samsung_jflte" remote="github" revision="opt-cm-12.1" />
