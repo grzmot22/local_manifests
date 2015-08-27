@@ -40,4 +40,8 @@
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master"/>
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1-linaro" name="UBERTC/arm-eabi-5.1" remote="bitbucket" revision="master"/>
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-linaro" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master"/>
+<!-- FUSIONJACK UBER TOOLCHAINS -->
+<project name="fusionjack/uber_arm-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-fus" remote="bitbucket" revision="master" />
+  <project name="fusionjack/uber_arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-fus" remote="bitbucket" revision="master"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="master" />
 </manifest>
