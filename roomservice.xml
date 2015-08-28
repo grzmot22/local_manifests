@@ -22,7 +22,7 @@
 <!--Proprietary vendor blobs-->
 <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-12.1" />
  <!-- SamsungServiceMode -->
-  <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="lp5.1" />
+  <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-12.1" />
   <!--  SABERMOD ROM TOOLCHAINS  -->
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master"/>
