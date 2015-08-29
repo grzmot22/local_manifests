@@ -87,15 +87,21 @@
         <project path="packages/apps/Terminal" name="JDCTeam/android_packages_apps_Terminal" remote="github" revision="opt-cm-12.1" />
 
         <!-- Our sm enhanced toolchains -->
-        <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
+        <!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
 		  
          <!--  SABERMOD ROM TOOLCHAINS  -->
-<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>-->
-<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master"/>-->
-<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master"/>-->
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master"/>
-<!--  LINARO ROM TOOLCHAINS  -->
-<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master"/>-->
-<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>-->
-<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master"/>-->
+	<!--  LINARO ROM TOOLCHAINS  -->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master"/>-->
+		<!-- JustArchi Toolchain -->
+		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
+		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
+	<!-- /Toolchain -->
 </manifest>
