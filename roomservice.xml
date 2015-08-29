@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<!--Self update this manifest-->
+	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="lollipop-5.1">
+		<copyfile src="roomservice.xml" dest="roomservice.xml" />
+	</project>
   <!-- Pyramid -->
   <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-12.1" />
   <project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
