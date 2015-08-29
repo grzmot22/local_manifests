@@ -12,7 +12,7 @@
   <project name="ivanich/android_kernel_htc_pyramid" path="kernel/htc/pyramid" remote="github" revision="cm-12.0" />
   <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-12.1" />
   <!--- i9100 -->
-  <project name="Lysergic-Acid/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-12.1" />
+  <project name="grzmot22/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-12.1" />
   <project name="Lysergic-Acid/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="cm-12.1" />
   <project name="Lysergic-Acid/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-12.1" />
   <project name="Lysergic-Acid/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="cm-12.1" />
