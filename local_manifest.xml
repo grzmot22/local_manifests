@@ -105,4 +105,14 @@
 		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
 	<!-- /Toolchain -->
+	<!--Qcom LLVM compiler 3.6-->
+	<remove-project name="CyanogenMod/android_frameworks_rs" path="frameworks/rs" groups="pdk" />
+	<remove-project name="platform/android_external/compiler-rt" path="external/compiler-rt" />
+	<project path="frameworks/rs" name="ResurrectionRemix/android_frameworks_rs" groups="pdk" />
+	<project name="mustermaxmueller/compiler-rt" path="external/compiler-rt" remote="github" revision="clang_qcom_3.6" />
+	<project name="mustermaxmueller/clanglibs" path="vendor/clanglibs" remote="github" revision="clang_qcom_3.6" />
+	<project name="varund7726/llvm-Snapdragon_LLVM_for_Android_3.5" path ="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" remote="github" revision="master"/>
+	<project name="varund7726/llvm-Snapdragon_LLVM_for_Android_3.6" path ="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" remote="github" revision="master"/>
+	<project name="varund7726/arm-linux-androideabi-snapdragonclang3.6" path ="prebuilts/clang/linux-x86/host/arm-linux-androideabi-snapdragonclang3.6" remote="github" revision="master"/>
+	<project name="varund7726/aarch64-linux-android-snapdragonclang3.6" path ="prebuilts/clang/linux-x86/host/aarch64-linux-android-snapdragonclang3.6" remote="github" revision="master"/>
 </manifest>
