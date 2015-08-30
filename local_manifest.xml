@@ -115,4 +115,7 @@
 	<project name="varund7726/llvm-Snapdragon_LLVM_for_Android_3.6" path ="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" remote="github" revision="master"/>
 	<project name="varund7726/arm-linux-androideabi-snapdragonclang3.6" path ="prebuilts/clang/linux-x86/host/arm-linux-androideabi-snapdragonclang3.6" remote="github" revision="master"/>
 	<project name="varund7726/aarch64-linux-android-snapdragonclang3.6" path ="prebuilts/clang/linux-x86/host/aarch64-linux-android-snapdragonclang3.6" remote="github" revision="master"/>
+	<!--external-->
+	<remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" revision="cm-12.1" />
+	<project name="ArchiDroid/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="github" revision="cm-12.1" />
 </manifest>
