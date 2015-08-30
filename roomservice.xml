@@ -10,6 +10,10 @@
 <remote name="vr" fetch="https://github.com/VanirAOSP/"/>
 <remote name="lsd" fetch="https://github.com/LiquidSmooth-Devices/"/>
 <remote name="bitbucket" fetch="https://bitbucket.org/"/>
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-5.1.1_r13" />
   <!--Pyramid device tree-->
 <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-12.1" />
 
@@ -45,5 +49,6 @@
 <!-- FUSIONJACK UBER TOOLCHAINS -->
 <project name="fusionjack/uber_arm-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-fus" remote="bitbucket" revision="master" />
   <project name="fusionjack/uber_arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-fus" remote="bitbucket" revision="master"/>
-  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="master" />
+  <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-ubb" remote="github" revision="master"/>
+    
 </manifest>
