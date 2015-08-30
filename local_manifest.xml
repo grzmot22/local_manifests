@@ -89,10 +89,9 @@
 
         <!-- Our sm enhanced toolchains -->
         <!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
-		  <!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
-        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.8/>-->
-		  
-         <!--  SABERMOD ROM TOOLCHAINS  -->
+		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
+        
+		  <!--  SABERMOD ROM TOOLCHAINS  -->
 	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>-->
 	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master"/>-->
 	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master"/>-->
@@ -109,7 +108,7 @@
 	<!-- /Toolchain -->
 	<!--Qcom LLVM compiler 3.6-->
 	<remove-project name="CyanogenMod/android_frameworks_rs" path="frameworks/rs" groups="pdk" />
-	<remove-project name="platform/android_external/compiler-rt" path="external/compiler-rt" />
+	<remove-project name="platform/external/compiler-rt" path="external/compiler-rt" />
 	<project path="frameworks/rs" name="ResurrectionRemix/android_frameworks_rs" groups="pdk" />
 	<project name="mustermaxmueller/compiler-rt" path="external/compiler-rt" remote="github" revision="clang_qcom_3.6" />
 	<project name="mustermaxmueller/clanglibs" path="vendor/clanglibs" remote="github" revision="clang_qcom_3.6" />
