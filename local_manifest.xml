@@ -88,7 +88,7 @@
         <project path="packages/apps/Terminal" name="JDCTeam/android_packages_apps_Terminal" remote="github" revision="opt-cm-12.1" />
 
         <!-- Our sm enhanced toolchains -->
-        <!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
+        <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
 	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.8-UBER" />
 	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
         
