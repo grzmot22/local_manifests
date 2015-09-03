@@ -78,9 +78,9 @@
 	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.1-arm-linux-gnueabihf" />-->
 
          <!-- ART and Bionic from AOSP ROM repos -->
-	<!--<remove-project name="CyanogenMod/android_art" path="art" />-->
+	<remove-project name="CyanogenMod/android_art" path="art" />
 	<remove-project name="CyanogenMod/android_bionic" path="bionic" />
-        <!--<project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />-->
+        <project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />
         <project path="bionic" name="AOSP-JF/platform_bionic" groups="pdk" remote="github" revision="aosp-5.1" />
         
         <!-- Terminal App -->
@@ -89,7 +89,9 @@
 
         <!-- Our sm enhanced toolchains -->
         <!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
-		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
+	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.8-UBER" />
+	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9" />
+	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
         
 		  <!--  SABERMOD ROM TOOLCHAINS  -->
 	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>-->
@@ -101,10 +103,10 @@
 	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>-->
 	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master"/>-->
 		<!-- JustArchi Toolchain -->
-		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a15_neon_vfpv4" />
 		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />-->
 	<!-- /Toolchain -->
 	<!--Qcom LLVM compiler 3.6-->
 	<!--<remove-project name="CyanogenMod/android_frameworks_rs" path="frameworks/rs" groups="pdk" />
