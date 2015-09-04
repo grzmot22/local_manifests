@@ -19,7 +19,7 @@
 
 	<!--Device tree-->
 	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-12.1" />
-	<project path="device/samsung/jf-common" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1" />
+	<project path="device/samsung/jf-common" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1-test" />
 	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-12.1" />
 
 	<!--Framework-->
