@@ -36,14 +36,14 @@
   <project name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" path="kernel/cr-arm-eabi-4.9.4" remote="github" revision="master" />
   <project name="AOSP-JF/STweaks" path="packages/apps/STweaks" remote="github" revision="aosp-5.1" />
   <!-- Toolchains -->
-  <project name="UBERTC/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-eabi-6.0" path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-uber" remote="bitbucket" revision="master" />
+  <!--<project name="UBERTC/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" remote="bitbucket" revision="master" />
+  <project name="UBERTC/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber2" remote="bitbucket" revision="master" />
+  <project name="UBERTC/arm-eabi-6.0" path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-uber2" remote="bitbucket" revision="master" />
   <project name="UBERTC/arm-eabi-5.1" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-linux-androideabi-5.1" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
+  <project name="UBERTC/arm-linux-androideabi-5.1" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />-->
   <project name="Lysergic-Acid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.1" />
  	<!--  JustArchi Toolchain -->
-		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" />-->
+		<remove-project name="UBERTC/arm-eabi-4.9" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
 		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
@@ -53,3 +53,4 @@
 	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
 	<project path="bootable/recovery" name="grzmot22/android_bootable_recovery" remote="github" revision="android-5.1" />
  </manifest>
+
