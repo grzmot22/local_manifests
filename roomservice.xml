@@ -65,4 +65,5 @@
 		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />-->
 	<!-- /Toolchain -->
+	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a15_neon_vfpv4" />
 </manifest>
