@@ -4,7 +4,6 @@
 	<!--Self update this manifest-->
 	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-12.1">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
-		<copyfile src="roomservice.xml" dest="roomservice.xml" />
 	</project>
 
 	<!--Android_build with ArchiDroid optimizations-->
@@ -19,7 +18,7 @@
 
 	<!--Device tree-->
 	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-12.1" />
-	<project path="device/samsung/jf-common" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1" />
+	<project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1" />
 	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-12.1" />
 
 	<!--Framework-->
@@ -31,10 +30,7 @@
 	<!--Packages-->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
-	<project path="packages/apps/sms-backup-plus" name="jberkel/sms-backup-plus" remote="github" revision="master" />
-	<!--TWRP-->
-	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
-	<project path="bootable/recovery" name="grzmot22/android_bootable_recovery" remote="github" revision="android-5.1" />
+
 	<!--Prebuilt WebView-->
 	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
 	<project path="frameworks/webview" name="arter97/android_frameworks_webview" remote="github" revision="cm-12.1" />
@@ -60,7 +56,7 @@
 
 	<!--Vendor-->
 	<remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm" />
-	<project path="vendor/cm" name="grzmot22/android_vendor_cm" remote="github" revision="opt-cm-12.1" />
+	<project path="vendor/cm" name="Jgrzmot22/android_vendor_cm" remote="github" revision="opt-cm-12.1" />
 	<project path="vendor/jdc" name="grzmot22/android_vendor_jdc" remote="github" revision="opt-cm-12.1" >
 	  <copyfile src="build.sh" dest="build.sh" />
 	</project>
@@ -89,35 +85,6 @@
 
         <!-- Our sm enhanced toolchains -->
         <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
-	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.8-UBER" />
-	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
-        
-		  <!--  SABERMOD ROM TOOLCHAINS  -->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>-->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master"/>-->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master"/>-->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master"/>-->
-	<!--  LINARO ROM TOOLCHAINS  -->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master"/>-->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>-->
-	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master"/>-->
-		<!-- JustArchi Toolchain -->
-		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a15_neon_vfpv4" />
-		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />-->
-	<!-- /Toolchain -->
-	<!--Qcom LLVM compiler 3.6-->
-	<!--<remove-project name="CyanogenMod/android_frameworks_rs" path="frameworks/rs" groups="pdk" />
-	<remove-project name="platform/external/compiler-rt" path="external/compiler-rt" />
-	<project path="frameworks/rs" name="ResurrectionRemix/android_frameworks_rs" groups="pdk" />
-	<project name="mustermaxmueller/compiler-rt" path="external/compiler-rt" remote="github" revision="clang_qcom_3.6" />
-	<project name="mustermaxmueller/clanglibs" path="vendor/clanglibs" remote="github" revision="clang_qcom_3.6" />
-	<project name="varund7726/llvm-Snapdragon_LLVM_for_Android_3.5" path ="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" remote="github" revision="master"/>
-	<project name="varund7726/llvm-Snapdragon_LLVM_for_Android_3.6" path ="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" remote="github" revision="master"/>
-	<project name="varund7726/arm-linux-androideabi-snapdragonclang3.6" path ="prebuilts/clang/linux-x86/host/arm-linux-androideabi-snapdragonclang3.6" remote="github" revision="master"/>
-	<project name="varund7726/aarch64-linux-android-snapdragonclang3.6" path ="prebuilts/clang/linux-x86/host/aarch64-linux-android-snapdragonclang3.6" remote="github" revision="master"/>-->
-	<!--external-->
-	<!--<remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" revision="cm-12.1" />
-	<project name="ArchiDroid/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="github" revision="cm-12.1" />-->
+        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.8-UBER" />
+		<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
 </manifest>
