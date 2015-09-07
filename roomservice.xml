@@ -43,10 +43,11 @@
   <project name="UBERTC/arm-linux-androideabi-5.1" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
   <project name="Lysergic-Acid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.1" />
  	<!--  JustArchi Toolchain -->
-		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
-		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
+		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" />-->
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
+		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-archi" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a9_neon" />
 	<!-- /JustArchiToolchain -->
 	<!--TWRP-->
 	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
