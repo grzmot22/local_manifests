@@ -50,5 +50,19 @@
 <project name="fusionjack/uber_arm-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-fus" remote="bitbucket" revision="master" />
   <project name="fusionjack/uber_arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-fus" remote="bitbucket" revision="master"/>
   <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-ubb" remote="github" revision="master"/>
-    
+<!--  SABERMOD ROM TOOLCHAINS  -->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master"/>-->
+	<!--  LINARO ROM TOOLCHAINS  -->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>-->
+	<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master"/>-->
+		<!-- JustArchi Toolchain -->
+		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a15_neon_vfpv4" />
+		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />-->
+	<!-- /Toolchain -->
 </manifest>
