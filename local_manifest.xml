@@ -88,4 +88,7 @@
         <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
         <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.8-UBER" />
 		<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
-</manifest>
+	
+	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
+	<project path="art" name="grzmot22/android_system_core" remote="github" revision="cm-12.1" />
+	</manifest>
