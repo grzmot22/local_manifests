@@ -90,5 +90,5 @@
 		<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
 	
 	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
-	<project path="system/core" name="AOSP-JF/platform_system_core" remote="github" revision="aosp-5.1" />
+	<project path="system/core" name="grzmot22/platform_system_core" remote="github" revision="cm-12.1" />
 	</manifest>
