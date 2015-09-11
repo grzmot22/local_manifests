@@ -91,4 +91,7 @@
 	
 	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
 	<project path="system/core" name="grzmot22/android_system_core" remote="github" revision="cm-12.1" />
+	<!--x86_64-linux-glibc-2.20-4.8-->
+	<project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.20-4.8" name="frap129/x86_64-linux-glibc-2.20-4.8" remote="github" revision="master" />
+	
 	</manifest>
