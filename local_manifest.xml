@@ -9,7 +9,7 @@
 
 	<!--Android_build with ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_build" path="build" />
-	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-12.1-test" >
+	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-12.1-test-old-temasek" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 
@@ -75,9 +75,9 @@
 	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.1-arm-linux-gnueabihf" />-->
 
          <!-- ART and Bionic from AOSP ROM repos -->
-	<remove-project name="CyanogenMod/android_art" path="art" />
+	<!--<remove-project name="CyanogenMod/android_art" path="art" />-->
 	<remove-project name="CyanogenMod/android_bionic" path="bionic" />
-        <project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />
+        <!--<project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />-->
         <project path="bionic" name="AOSP-JF/platform_bionic" groups="pdk" remote="github" revision="aosp-5.1" />
         
         <!-- Terminal App -->
@@ -93,5 +93,10 @@
 	<project path="system/core" name="grzmot22/android_system_core" remote="github" revision="cm-12.1" />
 	<!--x86_64-linux-glibc-2.20-4.8-->
 	<project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.20-4.8" name="frap129/x86_64-linux-glibc-2.20-4.8" remote="github" revision="master" />
-	
+	 <remove-project name="CyanogenMod/android_external_lz4" path="external/lz4" />
+	 <project path="external/lz4" name="temasek/android_external_lz4" remote="github" revision="cm-12.1" />
+	 <!--TWRP-->
+	 <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
+	 <project path="bootable/recovery" name="grzmot22/android_bootable_recovery" remote="github" revision="android-5.1" />
+	 <project path="kernel/samsung/RamdiskSL" name="grzmot22/Ramdisk" remote="github" revision="slim-5.1" />
 	</manifest>
