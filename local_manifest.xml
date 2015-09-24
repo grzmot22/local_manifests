@@ -38,7 +38,8 @@
 
 	<!--Hardware-->
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
-
+	<!-- JDC custom -->
+	<project path="packages/apps/LibSwitcher" name="JDCTeam/LibSwitcher" remote="github" revision="aosp" />
 	<!--Hardware for ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
 	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-5.1-caf-8960" />
