@@ -62,7 +62,9 @@
 	<project path="vendor/jdc" name="grzmot22/android_vendor_jdc" remote="github" revision="opt-cm-12.1" >
 	  <copyfile src="build.sh" dest="build.sh" />
 	</project>
-
+<!-- Our libpng from aosp -->
+	<remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
+	<project path="external/libpng" name="AOSP-JF/platform_external_libpng" groups="pdk" remote="github" revision="aosp-5.1" />        
 	<!-- Alucard24 Kernel -->
 	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-5.1" />
 	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="aospv2-5.1" />
