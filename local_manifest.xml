@@ -66,8 +66,6 @@
 	<!-- Alucard24 Kernel -->
 	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-5.1" />
 	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="aospv2-5.1" />
-	<project path="kernel/samsung/alucard24-suspend" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-5.1-suspend" />
-	<project path="kernel/samsung/Ramdisk-suspend" name="Alucard24/Ramdisk" remote="github" revision="platform-5.1-suspend" />
 	<project path="kernel/arm-eabi-5.2" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master"/>
 	<!-- Linaro 4.9.4 -->
 	<project path="kernel/cr-arm-eabi-4.9.4" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
