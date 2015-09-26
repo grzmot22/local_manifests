@@ -77,9 +77,9 @@
 	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.1-arm-linux-gnueabihf" />-->
 
          <!-- ART and Bionic from AOSP ROM repos -->
-	<!--<remove-project name="CyanogenMod/android_art" path="art" />-->
+	<remove-project name="CyanogenMod/android_art" path="art" />
 	<remove-project name="CyanogenMod/android_bionic" path="bionic" />
-        <!--<project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />-->
+        <project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />
         <project path="bionic" name="AOSP-JF/platform_bionic" groups="pdk" remote="github" revision="aosp-5.1" />
         
         <!-- Terminal App -->
