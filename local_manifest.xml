@@ -103,4 +103,7 @@
 	 <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
 	 <project path="bootable/recovery" name="grzmot22/android_bootable_recovery" remote="github" revision="android-5.1" />
 	 <project path="kernel/samsung/RamdiskSL" name="grzmot22/Ramdisk" remote="github" revision="slim-5.1" />
+	<!-- Modified bluedroid -->
+	<remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" />
+	<project path="external/bluetooth/bluedroid" name="JDCTeam/android_external_bluetooth_bluedroid" groups="pdk" remote="github" revision="opt-cm-12.1" />
 	</manifest>
