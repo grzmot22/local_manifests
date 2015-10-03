@@ -24,7 +24,7 @@
 
 	<!--Framework-->
 	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
-	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-12.1-temasek" />
+	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
 	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
 
