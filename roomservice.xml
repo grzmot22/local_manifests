@@ -13,7 +13,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r18" />
+           revision="refs/tags/android-5.1.1_r24" />
   <!--Pyramid device tree-->
 <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-12.1" />
 
