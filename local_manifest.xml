@@ -27,14 +27,15 @@
 	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
 	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-12.1" />
-
+	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
+	<project path="frameworks/native" name="JDCTeam/android_frameworks_native" remote="github" revision="opt-cm-12.1" />
 	<!--Packages-->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
 
 	<!--Prebuilt WebView-->
 	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
-	<project path="frameworks/webview" name="arter97/android_frameworks_webview" remote="github" revision="cm-12.1" />
+	<project path="frameworks/webview" name="JDCTeam/android_frameworks_webview" remote="github" revision="cm-12.1" />
 
 	<!--Hardware-->
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
