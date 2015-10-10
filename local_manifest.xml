@@ -83,9 +83,7 @@
         <project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />
         <project path="bionic" name="AOSP-JF/platform_bionic" groups="pdk" remote="github" revision="aosp-5.1" />
         
-        <!-- Terminal App -->
-	<remove-project name="CyanogenMod/android_packages_apps_Terminal" path="packages/apps/Terminal" />
-        <project path="packages/apps/Terminal" name="JDCTeam/android_packages_apps_Terminal" remote="github" revision="opt-cm-12.1" />
+        
 
         <!-- Our sm enhanced toolchains -->
         <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
