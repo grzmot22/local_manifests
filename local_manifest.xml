@@ -51,6 +51,10 @@
 	<!--STweaks-->
 	<project path="packages/apps/STweaks" name="AOSP-JF/STweaks" remote="github" revision="aosp-5.1" />
 
+	<!-- Setup Wizard -->
+	<remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
+	<project path="packages/apps/SetupWizard" name="JDCTeam/android_packages_apps_SetupWizard" remote="github" revision="opt-cm-12.1" /
+
 	<!--OTA Updates-->
 	<project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
 
