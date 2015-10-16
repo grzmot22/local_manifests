@@ -20,7 +20,7 @@
   <project name="Lysergic-Acid/Dorimanx-SG2-I9100-Kernel" path="kernel/samsung/Dorimanx-SG2-I9100-Kernel" remote="github" revision="master-maliv3" />
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
   <!-- Jflte -->
-  <project name="JDCTeam/android_device_samsung_jflte" path="device/samsung/jflte" remote="github" revision="opt-cm-12.1" />
+  <!--<project name="JDCTeam/android_device_samsung_jflte" path="device/samsung/jflte" remote="github" revision="opt-cm-12.1" />
   <project name="JDCTeam/android_device_samsung_jf-common" path="device/samsung/jf-common" remote="github" revision="opt-cm-12.1" />
   <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-12.1" />
   <remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
@@ -32,15 +32,14 @@
   </project>
   <project name="Alucard24/Alucard-Kernel-jfltexx" path="kernel/samsung/alucard24" remote="github" revision="my-aospv2-5.1" />
   <project name="Alucard24/Ramdisk" path="kernel/samsung/Ramdisk" remote="github" revision="aospv2-5.1" />
-  <project name="arter97/arm-eabi-5.1" path="kernel/arm-eabi-5.1" remote="github" revision="master" />
   <project name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" path="kernel/cr-arm-eabi-4.9.4" remote="github" revision="master" />
-  <project name="AOSP-JF/STweaks" path="packages/apps/STweaks" remote="github" revision="aosp-5.1" />
+  <project name="AOSP-JF/STweaks" path="packages/apps/STweaks" remote="github" revision="aosp-5.1" />-->
   <!-- Toolchains -->
-  <project name="UBERTC/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" remote="bitbucket" revision="master" />
+  <!--<project name="UBERTC/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" remote="bitbucket" revision="master" />
   <project name="UBERTC/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" remote="bitbucket" revision="master" />
   <project name="UBERTC/arm-eabi-6.0" path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-uber" remote="bitbucket" revision="master" />
   <project name="UBERTC/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-linux-androideabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />
+  <project name="UBERTC/arm-linux-androideabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />-->
   <project name="Lysergic-Acid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.1" />
  	<!--  JustArchi Toolchain -->
 		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" />-->
