@@ -91,7 +91,7 @@
         <project path="bionic" name="AOSP-JF/platform_bionic" groups="pdk" remote="github" revision="aosp-5.1" /> -->
 
         <!-- JDC Toolbox -->
-        <project path="packages/apps/Toolbox" name="JDCTeam/Toolbox" remote="github" revision="aosp" />
+        <!--<project path="packages/apps/Toolbox" name="JDCTeam/Toolbox" remote="github" revision="aosp" />-->
 
         <!-- Our UBER enhanced toolchain -->
         <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
