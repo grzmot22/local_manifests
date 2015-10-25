@@ -33,22 +33,22 @@
 
 	<!--Framework-->
 	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
-	<project path="frameworks/av" name="JDCTeam/android_frameworks_av" remote="github" revision="opt-cm-13.0" />
+	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-13.0" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
 	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-13.0" />
 	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
-	<project path="frameworks/native" name="JDCTeam/android_frameworks_native" remote="github" revision="opt-cm-13.0" />
+	<project path="frameworks/native" name="grzmot22/android_frameworks_native" remote="github" revision="opt-cm-13.0" />
 
 	<!--Packages-->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
-	<project path="packages/apps/Settings" name="JDCTeam/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0" />
+	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0" />
 
 	<!--Hardware-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />
 	<remove-project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8960" revision="cm-13.0-caf-8960" />
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
-	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" />
-	<project path="hardware/qcom/media-caf/msm8960" name="JDCTeam/android_hardware_qcom_media" revision="opt-6.0-caf-8960" />
+	<project path="hardware/qcom/display-caf/msm8960" name="grzmot22/android_hardware_qcom_display" revision="opt-6.0-caf-8960" />
+	<project path="hardware/qcom/media-caf/msm8960" name="grzmot22/android_hardware_qcom_media" revision="opt-6.0-caf-8960" />
 
 	<!--Stock CM kernel -->
 	<project path="kernel/samsung/jf" name="JDCTeam/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
