@@ -14,7 +14,7 @@
 
 	<!-- Customized android_build -->
 	<remove-project name="CyanogenMod/android_build" path="build" />
-	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-13.0" >
+	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-13.0" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 	
