@@ -27,8 +27,6 @@
 	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
 	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-12.1-test" />
-	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
-	<project path="frameworks/native" name="JDCTeam/android_frameworks_native" remote="github" revision="opt-cm-12.1" />
 	<!--Packages-->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
@@ -98,8 +96,7 @@
 	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
 	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
 	
-	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
-	<project path="system/core" name="grzmot22/android_system_core" remote="github" revision="cm-12.1" />
+	
 	<!--x86_64-linux-glibc-2.20-4.8-->
 	<project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.20-4.8" name="frap129/x86_64-linux-glibc-2.20-4.8" remote="github" revision="master" />
 	 <remove-project name="CyanogenMod/android_external_lz4" path="external/lz4" />
