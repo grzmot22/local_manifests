@@ -1,117 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-12.1">
-		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
-		<copyfile src="roomservice.xml" dest="roomservice.xml" />
-	</project>
-
-	<!--Android_build with ArchiDroid optimizations-->
-	<remove-project name="CyanogenMod/android_build" path="build" />
-	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-12.1-test-old" >
-	  <copyfile src="core/root.mk" dest="Makefile" />
-	</project>
-
-	<!--libcore-->
-	<remove-project name="CyanogenMod/android_libcore" path="libcore" />
-	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-12.1" />
-	<!--<remove-project name="CyanogenMod/android_system_core" path="system/core" />
-	<project path="system/core" name="grzmot22/android_system_core" remote="github" revision="cm-12.1" />-->
-	<!--Device tree-->
-	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-12.1" />
-	<project path="device/samsung/jf-common" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-12.1-test2" />
-	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-12.1" />
-
-	<!--Framework-->
-	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
-	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-12.1" />
-	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
-	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-12.1-test" />
-	<!--<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
-	<project path="frameworks/native" name="JDCTeam/android_frameworks_native" remote="github" revision="opt-cm-12.1" />-->
-	<!--Packages-->
-	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
-	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-12.1" />
-
-	<!--Prebuilt WebView-->
-	<remove-project name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" />
-	<project path="frameworks/webview" name="JDCTeam/android_frameworks_webview" remote="github" revision="master" />
-
-	<!--Hardware-->
-	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-12.1" />
-	<!-- JDC Toolbox -->
-	<!--<project path="packages/apps/Toolbox" name="JDCTeam/Toolbox" remote="github" revision="aosp" />-->
-	<!--Hardware for ArchiDroid optimizations-->
-	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
-	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-5.1-caf-8960" />
-
-	<!--Stock CM kernel for now-->
-	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-12.1" />
 	
-	<!--STweaks-->
-	<project path="packages/apps/STweaks" name="JDCTeam/STweaks" remote="github" revision="aosp" />
-
-	<!-- Setup Wizard -->
-	<remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
-	<project path="packages/apps/SetupWizard" name="JDCTeam/android_packages_apps_SetupWizard" remote="github" revision="opt-cm-12.1" />
-
-	<!--OTA Updates-->
-	<project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
-
-	<!--Proprietary vendor blobs-->
-	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-unified-12.1" />
-
-	<!--Vendor-->
-	<remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm" />
-	<project path="vendor/cm" name="grzmot22/android_vendor_cm" remote="github" revision="opt-cm-12.1" />
-	<project path="vendor/jdc" name="grzmot22/android_vendor_jdc" remote="github" revision="opt-cm-12.1" >
-	  <copyfile src="build.sh" dest="build.sh" />
-	</project>
-<!-- Our libpng from aosp -->
-	<remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
-	<project path="external/libpng" name="AOSP-JF/platform_external_libpng" groups="pdk" remote="github" revision="aosp-5.1" />        
 	<!-- Alucard24 Kernel -->
-	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-5.1" />
-	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="aospv2-5.1" />
-	<project path="kernel/samsung/Ramdisk-JD-alu-bkp" name="JDCTeam/Ramdisk" remote="github" revision="alu-bkp" />
-	<project path="kernel/samsung/Ramdisk-JD-alu-cm-12.1" name="JDCTeam/Ramdisk" remote="github" revision="alu-cm-12.1" />
+	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-6.0" />
+	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="platform-6.0" />
 	<project path="kernel/arm-eabi-5.2" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master"/>
 	<!-- Linaro 4.9.4 -->
 	<project path="kernel/cr-arm-eabi-4.9.4" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
-
-	<!--ArchiToolchain
-	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
-	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.1-arm-linux-gnueabihf" />-->
-
-         <!-- ART and Bionic from AOSP ROM repos -->
-	<remove-project name="CyanogenMod/android_art" path="art" />
-	<remove-project name="CyanogenMod/android_bionic" path="bionic" />
-        <project path="art" name="AOSP-JF/platform_art" groups="pdk" remote="github" revision="aosp-5.1" />
-        <project path="bionic" name="AOSP-JF/platform_bionic" groups="pdk" remote="github" revision="aosp-5.1" />
-        
-        
-
-        <!-- Our sm enhanced toolchains -->
-        <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
-        <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
-        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
-	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
-	<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
-	
-	
-	<!--x86_64-linux-glibc-2.20-4.8-->
-	<project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.20-4.8" name="frap129/x86_64-linux-glibc-2.20-4.8" remote="github" revision="master" />
-	 <remove-project name="CyanogenMod/android_external_lz4" path="external/lz4" />
-	 <project path="external/lz4" name="temasek/android_external_lz4" remote="github" revision="cm-12.1" />
-	 <!--TWRP-->
-	 <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
-	 <project path="bootable/recovery" name="grzmot22/android_bootable_recovery" remote="github" revision="android-5.1" />
-	 <project path="kernel/samsung/RamdiskSL" name="grzmot22/Ramdisk" remote="github" revision="slim-5.1" />
-	<!-- Modified bluedroid -->
-	<remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" />
-	<project path="external/bluetooth/bluedroid" name="JDCTeam/android_external_bluetooth_bluedroid" groups="pdk" remote="github" revision="opt-cm-12.1" />
-	<!-- Enhanced and updated jemalloc -->
-        <remove-project name="platform/external/jemalloc" path="external/jemalloc" />
-        <project path="external/jemalloc" name="arter97/android_external_jemalloc" groups="pdk" remote="github" revision="android-5.1" />
 	</manifest>
