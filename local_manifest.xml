@@ -9,7 +9,7 @@
 
 	<!--Android_build with ArchiDroid optimizations-->
 	<remove-project name="CyanogenMod/android_build" path="build" />
-	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-12.1-test-old" >
+	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-12.1-test-old-temasek" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 
