@@ -13,7 +13,7 @@
   <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-13.0" />
   <!--- i9100 -->
   <project name="grzmot22/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-13.0" />
-  <project name="Lysergic-Acid/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="cm-13.0" />
+  <project name="CyanogenMod/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="cm-13.0" />
   <project name="Lysergic-Acid/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-13.0" />
   <project name="Lysergic-Acid/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="cm-13.0" />
   <project name="Lysergic-Acid/initramfs3" path="kernel/samsung/initramfs3" remote="github" revision="master" />
