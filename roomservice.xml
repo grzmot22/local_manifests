@@ -45,9 +45,9 @@
 		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" />-->
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
 		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
-		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+		<!--<remove-project name="/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-archi" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a9_neon" />
+		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-archi" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a9_neon" />-->
 	<!-- /JustArchiToolchain -->
 	<!--TWRP-->
 	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
