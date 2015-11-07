@@ -6,9 +6,9 @@
 	</project>
   <!-- Pyramid -->
   <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-13.0" />
-  <project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-13.0-caf-8660" />
-  <project name="ivanich/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8660" remote="github" revision="cm-13.0-caf-8660" />
-  <project name="ivanich/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8660" remote="github" revision="cm-13.0-caf-8660" />
+  <project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-13.0" />
+  <project name="ivanich/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8660" remote="github" revision="cm-13.0" />
+  <project name="ivanich/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8660" remote="github" revision="cm-13.0" />
   <project name="ivanich/android_kernel_htc_pyramid" path="kernel/htc/pyramid" remote="github" revision="cm-13.0" />
   <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-13.0" />
   <!--- i9100 -->
