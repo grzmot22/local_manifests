@@ -5,17 +5,17 @@
 		<copyfile src="roomservice.xml" dest="roomservice.xml" />
 	</project>
   <!-- Pyramid -->
-  <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-12.1" />
-  <project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
-  <project name="ivanich/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
-  <project name="ivanich/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8660" remote="github" revision="cm-12.1-caf-8660" />
-  <project name="ivanich/android_kernel_htc_pyramid" path="kernel/htc/pyramid" remote="github" revision="cm-12.1" />
-  <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-12.1" />
+  <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-13.0" />
+  <project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-13.0-caf-8660" />
+  <project name="ivanich/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8660" remote="github" revision="cm-13.0-caf-8660" />
+  <project name="ivanich/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8660" remote="github" revision="cm-13.0-caf-8660" />
+  <project name="ivanich/android_kernel_htc_pyramid" path="kernel/htc/pyramid" remote="github" revision="cm-13.0" />
+  <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-13.0" />
   <!--- i9100 -->
-  <project name="grzmot22/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-12.1" />
-  <project name="Lysergic-Acid/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="cm-12.1" />
-  <project name="Lysergic-Acid/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-12.1" />
-  <project name="Lysergic-Acid/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="cm-12.1" />
+  <project name="grzmot22/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-13.0" />
+  <project name="Lysergic-Acid/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="cm-13.0" />
+  <project name="Lysergic-Acid/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-13.0" />
+  <project name="Lysergic-Acid/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="cm-13.0" />
   <project name="Lysergic-Acid/initramfs3" path="kernel/samsung/initramfs3" remote="github" revision="master" />
   <project name="Lysergic-Acid/Dorimanx-SG2-I9100-Kernel" path="kernel/samsung/Dorimanx-SG2-I9100-Kernel" remote="github" revision="master-maliv3" />
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
@@ -40,11 +40,12 @@
   <project name="UBERTC/arm-eabi-6.0" path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-uber" remote="bitbucket" revision="master" />
   <project name="UBERTC/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" remote="bitbucket" revision="master" />
   <project name="UBERTC/arm-linux-androideabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />-->
-  <project name="Lysergic-Acid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.1" />
+  <project name="Lysergic-Acid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-13.0" />
  	<!--  JustArchi Toolchain -->
 		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" />-->
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />
 		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
+		<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-archi" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a9_neon" />
 	<!-- /JustArchiToolchain -->
