@@ -50,6 +50,6 @@
 		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-archi" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a9_neon" />-->
 	<!-- /JustArchiToolchain -->
 	<!--TWRP-->
-	<!--<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
-	<project path="bootable/recovery" name="JTCTeam" remote="github" revision="master" />-->
+	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
+	<project path="bootable/recovery" name="JTCTeam/TWRP" remote="github" revision="master" />
  </manifest>
