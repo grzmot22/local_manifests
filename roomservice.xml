@@ -51,5 +51,5 @@
 	<!-- /JustArchiToolchain -->
 	<!--TWRP-->
 	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
-	<project path="bootable/recovery" name="JTCTeam/TWRP" remote="github" revision="master" />
+	<project path="bootable/recovery" name="JDCTeam/TWRP" remote="github" revision="master" />
  </manifest>
