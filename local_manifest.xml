@@ -72,7 +72,7 @@
 
 	<!-- SELinux rules -->
 	<remove-project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy" />
-	<project path="external/sepolicy" name="JDCTeam/android_external_sepolicy" remote="github" revision="cm-13.0-test" />
+	<project path="external/sepolicy" name="grzmot22/android_external_sepolicy" remote="github" revision="cm-13.0-test" />
 
 	<!-- Telephony framework -->
 	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
