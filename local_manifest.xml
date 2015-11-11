@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+	<remote name="bitbucket" fetch="https://bitbucket.org/"/>
 	<!--Self update this manifest-->
 	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-13.0">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
@@ -104,8 +104,8 @@
 
         <!-- Our UBER enhanced toolchain -->
         <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
-
+        <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />-->
+	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>
         <!-- Our libpng from AOSP
         <remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
         <project path="external/libpng" name="AOSP-JF/platform_external_libpng" groups="pdk" remote="github" revision="aosp-5.1" /> -->
