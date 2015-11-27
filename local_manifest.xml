@@ -53,7 +53,7 @@
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
 	<!-- <project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" /> 
 	<project path="hardware/qcom/media-caf/msm8960" name="grzmot22/android_hardware_qcom_media" revision="opt-6.0-caf-8960" />-->
-
+	<project path="hardware/sony/timekeep" name="CyanogenMod/android_hardware_sony_timekeep" remote="github" revision="cm-13.0" /
 	<!--Stock CM kernel -->
 	<project path="kernel/samsung/jf" name="grzmot22/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
 
