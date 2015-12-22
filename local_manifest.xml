@@ -2,7 +2,7 @@
 <manifest>
 	<remote name="bitbucket" fetch="https://bitbucket.org/"/>
 	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-13.0">
+	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-13.0-temasek">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
 	</project>
 	
