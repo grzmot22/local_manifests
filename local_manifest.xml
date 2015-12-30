@@ -14,7 +14,7 @@
 	<!-- START of temasek -->
   <remove-project name="CyanogenMod/android_art" path="art" />
   <remove-project name="CyanogenMod/android_bionic" path="bionic" />
-  <!--<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />-->
+  <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
   <remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
   <remove-project name="platform/external/jemalloc" path="external/jemalloc" />
   <remove-project name="CyanogenMod/android_external_sqlite" path="external/sqlite" />
@@ -138,7 +138,8 @@
         <!-- Our libpng from AOSP
         <remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
         <project path="external/libpng" name="AOSP-JF/platform_external_libpng" groups="pdk" remote="github" revision="aosp-5.1" /> -->
-<!--TWRP
-	 <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
-	 <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-6.0" />-->
+<!--TWRP -->
+	 <remove-project name="CyanogenMod/android_external_lz4" path="external/lz4" />
+	 <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-6.0" />
+	 <project path="external/lz4" name="omnirom/android_external_lz4" remote="github" revision="android-6.0" />	 
 </manifest>
