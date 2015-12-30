@@ -71,7 +71,7 @@
 	<remove-project name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="packages/services/Telephony" name="grzmot22/android_packages_services_Telephony" remote="github" revision="opt-cm-13.0-temasek" />
-	<project path="packages/providers/CarrierConfig" name="grzmot22/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0-temasek" />
+	<project path="packages/apps/CarrierConfig" name="grzmot22/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0-temasek" />
 	<!--Hardware
 	<remove-project name="CyanogenMod/android_hardware_libhardware" path="hardware/libhardware" />
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" />-->
