@@ -14,19 +14,21 @@
 	<!-- START of temasek -->
   <remove-project name="CyanogenMod/android_art" path="art" />
   <remove-project name="CyanogenMod/android_bionic" path="bionic" />
-  <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
+  <!--<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />-->
   <remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
   <remove-project name="platform/external/jemalloc" path="external/jemalloc" />
   <remove-project name="CyanogenMod/android_external_sqlite" path="external/sqlite" />
   <remove-project name="CyanogenMod/android_external_toybox" path="external/toybox" />
   <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
   <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
+  <remove-project name="CyanogenMod/android_packages_apps_InCallUI" path="packages/apps/InCallUI" />
   <remove-project name="CyanogenMod/android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" />
   <remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
-    <remove-project name="CyanogenMod/android_system_vold" path="system/vold" />
+  <remove-project name="CyanogenMod/android_system_vold" path="system/vold" />
+  <remove-project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" />
   <project path="art" name="temasek/android_art" remote="github" revision="cm-13.0" />
   <project path="bionic" name="temasek/android_bionic" remote="github" revision="cm-13.0" />
-  <project path="bootable/recovery" name="temasek/android_bootable_recovery" remote="github" revision="cm-13.0" />
+  <!--<project path="bootable/recovery" name="temasek/android_bootable_recovery" remote="github" revision="cm-13.0" />-->
   <project path="external/libpng" name="temasek/android_external_libpng" remote="github" revision="cm-13.0" />
   <project path="external/jemalloc" name="arter97/android_external_jemalloc" remote="github" revision="android-6.0" />
   <project path="external/sqlite" name="arter97/android_external_sqlite" remote="github" revision="cm-13.0" />
@@ -34,9 +36,11 @@
   <project path="external/wpa_supplicant_8" name="grzmot22/android_external_wpa_supplicant_8" remote="github" revision="cm-13.0" />
   <project path="packages/apps/Bluetooth" name="temasek/android_packages_apps_Bluetooth" remote="github" revision="cm-13.0" />
   <project path="packages/apps/OmniSwitch" name="temasek/android_packages_apps_OmniSwitch" remote="github" revision="cm-13.0" />
+  <project path="packages/apps/InCallUI" name="temasek/android_packages_apps_InCallUI" remote="github" revision="cm-13.0" />
   <project path="packages/providers/MediaProvider" name="temasek/android_packages_providers_MediaProvider" remote="github" revision="cm-13.0" />
   <project path="system/bt" name="temasek/android_system_bt" remote="github" revision="cm-13.0" />
-  <project path="system/vold" name="temasek/android_system_vold" remote="github" revision="cm-13.0" />
+  <!--<project path="external/vold" name="temasek/android_system_vold" remote="github" revision="cm-13.0" />-->
+  <project path="vendor/cmsdk" name="temasek/cm_platform_sdk" remote="github" revision="cm-13.0" />
   <!-- END of temasek -->
 
 	<!-- Core -->
@@ -57,7 +61,7 @@
 	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
 	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-13.0-temasek" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
-	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-13.0-temasek" />
+	<project path="frameworks/base" name="temasek/android_frameworks_base" remote="github" revision="cm-13.0" />
 	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
 	<project path="frameworks/native" name="temasek/android_frameworks_native" remote="github" revision="cm-13.0" />
 
@@ -85,7 +89,7 @@
 
 	<!-- Setup Wizard -->
 	<remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
-	<project path="packages/apps/SetupWizard" name="grzmot22/android_packages_apps_SetupWizard" remote="github" revision="opt-cm-13.0" />
+	<project path="packages/apps/SetupWizard" name="grzmot22/android_packages_apps_SetupWizard" remote="github" revision="opt-cm-13.0-temasek" />
 
 	<!--STweaks -->
 	<project path="packages/apps/STweaks" name="AOSP-JF-MM/STweaks" remote="github" revision="aosp-6.0" />
@@ -99,6 +103,8 @@
 	<!-- SELinux rules -->
 	<remove-project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy" />
 	<project path="external/sepolicy" name="grzmot22/android_external_sepolicy" remote="github" revision="opt-cm-13.0-temasek" />
+	<project path="external/vold" name="grzmot22/android_system_vold" remote="github" revision="opt-cm-13.0-temasek" />
+
 
 	<!-- Telephony framework  -->
 	
