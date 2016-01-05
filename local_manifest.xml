@@ -53,6 +53,7 @@
 	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-13.0" />-->
 
 	<!--Device tree-->
+	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-13.0-testing" />
 	<project path="device/samsung/jfltegsm" name="grzmot22/android_device_samsung_jfltegsm" remote="github" revision="cm-13.0" />
 	<project path="device/samsung/jf-common-old" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-test-old-ril" />
 	<project path="device/samsung/jf-common" name="grzmot22/platform_device_samsung_jf-common" remote="github" revision="cm-13.0-new-ril" />
