@@ -34,7 +34,7 @@
   <project path="external/jemalloc" name="arter97/android_external_jemalloc" remote="github" revision="android-6.0" />
   <project path="external/sqlite" name="arter97/android_external_sqlite" remote="github" revision="cm-13.0" />
   <project path="external/toybox" name="temasek/android_external_toybox" remote="github" revision="cm-13.0" />
-  <project path="external/wpa_supplicant_8" name="grzmot22/android_external_wpa_supplicant_8" remote="github" revision="cm-13.0" />
+  <project path="external/wpa_supplicant_8" name="grzmot22/android_external_wpa_supplicant_8" remote="github" revision="opt-cm-13.0-temasek" />
   <project path="packages/apps/Bluetooth" name="temasek/android_packages_apps_Bluetooth" remote="github" revision="cm-13.0" />
   <project path="packages/apps/OmniSwitch" name="temasek/android_packages_apps_OmniSwitch" remote="github" revision="cm-13.0" />
   <project path="packages/apps/InCallUI" name="temasek/android_packages_apps_InCallUI" remote="github" revision="cm-13.0" />
@@ -81,13 +81,13 @@
 	<!--<project path="hardware/libhardware" name="grzmot22/android_hardware_libhardware" remote="github" revision="cm-13.0" />
 	<project path="hardware/libhardware_legacy" name="grzmot22/android_hardware_libhardware_legacy" remote="github" revision="cm-13.0" />-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" revision="cm-13.0-caf-8960" />
-	<project name="grzmot22/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" revision="cm-13.0-caf-8960" />
+	<project name="grzmot22/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" revision="opt-cm-13.0-caf-8960-temasek" />
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
 	<!-- <project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" /> 
 	<project path="hardware/qcom/media-caf/msm8960" name="grzmot22/android_hardware_qcom_media" revision="opt-6.0-caf-8960" />-->
-	<project path="hardware/sony/timekeep" name="CyanogenMod/android_hardware_sony_timekeep" remote="github" revision="cm-13.0" />
+	<!--<project path="hardware/sony/timekeep" name="CyanogenMod/android_hardware_sony_timekeep" remote="github" revision="cm-13.0" />-->
 	<!--Stock CM kernel -->
-	<project path="kernel/samsung/jf" name="grzmot22/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
+	<project path="kernel/samsung/jf" name="grzmot22/android_kernel_samsung_jf" remote="github" revision="opt-cm-13.0-temasek" />
 
 	<!-- Setup Wizard -->
 	<remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
