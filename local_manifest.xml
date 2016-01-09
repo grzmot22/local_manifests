@@ -21,6 +21,7 @@
   <remove-project name="CyanogenMod/android_external_toybox" path="external/toybox" />
   <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
   <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
+  <remove-project name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" />
   <remove-project name="CyanogenMod/android_packages_apps_InCallUI" path="packages/apps/InCallUI" />
   <remove-project name="CyanogenMod/android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" />
   <remove-project name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/providers/CarrierConfig" />
@@ -36,6 +37,7 @@
   <project path="external/toybox" name="temasek/android_external_toybox" remote="github" revision="cm-13.0" />
   <project path="external/wpa_supplicant_8" name="grzmot22/android_external_wpa_supplicant_8" remote="github" revision="opt-cm-13.0-temasek" />
   <project path="packages/apps/Bluetooth" name="temasek/android_packages_apps_Bluetooth" remote="github" revision="cm-13.0" />
+  <project path="packages/apps/PackageInstaller" name="temasek/android_packages_apps_PackageInstaller" remote="github" revision="cm-13.0" />
   <project path="packages/apps/OmniSwitch" name="temasek/android_packages_apps_OmniSwitch" remote="github" revision="cm-13.0" />
   <project path="packages/apps/InCallUI" name="temasek/android_packages_apps_InCallUI" remote="github" revision="cm-13.0" />
   <project path="packages/providers/MediaProvider" name="temasek/android_packages_providers_MediaProvider" remote="github" revision="cm-13.0" />
@@ -53,10 +55,10 @@
 	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-13.0" />-->
 
 	<!--Device tree-->
-	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-13.0-testing" />
+	<project path="device/samsung/jflte" name="grzmot22/platform_device_samsung_jflte" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="device/samsung/jfltegsm" name="grzmot22/android_device_samsung_jfltegsm" remote="github" revision="cm-13.0" />
-	<project path="device/samsung/jf-common-old" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-test-old-ril" />
-	<project path="device/samsung/jf-common" name="grzmot22/platform_device_samsung_jf-common" remote="github" revision="cm-13.0-new-ril" />
+	<!--<project path="device/samsung/jf-common-old" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-test-old-ril" />-->
+	<!--<project path="device/samsung/jf-common" name="grzmot22/platform_device_samsung_jf-common" remote="github" revision="cm-13.0-new-ril" />-->
 	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-13.0" />
 
 	<!--Framework -->
@@ -66,13 +68,14 @@
 	<project path="frameworks/base" name="temasek/android_frameworks_base" remote="github" revision="cm-13.0" />
 	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
 	<project path="frameworks/native" name="temasek/android_frameworks_native" remote="github" revision="cm-13.0" />
-
+	<project path="frameworks/opt/cards" name="temasek/frameworks_opt_cards" remote="github" revision="cm-13.0" />
 	<!--Packages-->
 	<remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
 	<remove-project name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" />
 	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="packages/services/Telephony" name="grzmot22/android_packages_services_Telephony" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="packages/apps/CarrierConfig" name="grzmot22/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0-temasek" />
+	<project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" remote="github" revision="cm-13.0" />
 	<!--Hardware
 	<remove-project name="CyanogenMod/android_hardware_libhardware" path="hardware/libhardware" />
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" />-->
@@ -121,7 +124,7 @@
 
 	<!-- Alucard24 Kernel-->
 	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-6.0" />
-	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="platform-6.0" /> 
+	<project path="kernel/samsung/Ramdisk" name="grzmot22/Ramdisk" remote="github" revision="opt-cm-13.0-temasek" /> 
 
 	<!--ArchiToolchain
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
