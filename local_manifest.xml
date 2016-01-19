@@ -15,6 +15,10 @@
 	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-13.0" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
+	
+	<!-- Core -->
+	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
+	<project path="system/core" name="JDCTeam/android_system_core" remote="github" revision="opt-cm-13.0" />
 
 	<!-- Device tree -->
 	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-13.0" />
