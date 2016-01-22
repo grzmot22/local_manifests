@@ -25,6 +25,7 @@
   <remove-project name="CyanogenMod/android_packages_apps_InCallUI" path="packages/apps/InCallUI" />
   <remove-project name="CyanogenMod/android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" />
   <remove-project name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/providers/CarrierConfig" />
+  <remove-project name="CyanogenMod/android_packages_services_Telecomm" path="packages/services/Telecomm" />
   <remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
   <remove-project name="CyanogenMod/android_system_vold" path="system/vold" />
   <remove-project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" />
@@ -41,7 +42,8 @@
   <project path="packages/apps/OmniSwitch" name="temasek/android_packages_apps_OmniSwitch" remote="github" revision="cm-13.0" />
   <project path="packages/apps/InCallUI" name="temasek/android_packages_apps_InCallUI" remote="github" revision="cm-13.0" />
   <project path="packages/providers/MediaProvider" name="temasek/android_packages_providers_MediaProvider" remote="github" revision="cm-13.0" />
-  <project path="system/bt" name="temasek/android_system_bt" remote="github" revision="cm-13.0" />
+  <project path="packages/services/Telecomm" name="grzmot22/android_packages_services_Telecomm" remote="github" revision="cm-13.0" />
+  <project path="system/bt" name="grzmot22/android_system_bt" remote="github" revision="cm-13.0" />
   <!--<project path="system/vold" name="temasek/android_system_vold" remote="github" revision="cm-13.0" />-->
   <project path="vendor/cmsdk" name="temasek/cm_platform_sdk" remote="github" revision="cm-13.0" />
   <!-- END of temasek -->
@@ -55,17 +57,16 @@
 	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-13.0" />-->
 
 	<!--Device tree-->
-	<project path="device/samsung/jflte" name="grzmot22/platform_device_samsung_jflte" remote="github" revision="opt-cm-13.0-temasek" />
-	<project path="device/samsung/jfltegsm" name="grzmot22/android_device_samsung_jfltegsm" remote="github" revision="cm-13.0" />
-	<!--<project path="device/samsung/jf-common-old" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-test-old-ril" />-->
-	<!--<project path="device/samsung/jf-common" name="grzmot22/platform_device_samsung_jf-common" remote="github" revision="cm-13.0-new-ril" />-->
+	<!--<project path="device/samsung/jflte" name="grzmot22/platform_device_samsung_jflte" remote="github" revision="opt-cm-13.0-temasek" />-->
+	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-13.0" />
+	<project path="device/samsung/jf-common" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-13.0" />
 
 	<!--Framework -->
 	<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
 	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-13.0-temasek" />
 	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
-	<project path="frameworks/base" name="temasek/android_frameworks_base" remote="github" revision="cm-13.0" />
+	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-13.0-temasek" />
 	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
 	<project path="frameworks/native" name="temasek/android_frameworks_native" remote="github" revision="cm-13.0" />
 	<project path="frameworks/opt/cards" name="temasek/frameworks_opt_cards" remote="github" revision="cm-13.0" />
@@ -104,7 +105,7 @@
 	<project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
 
 	<!--Proprietary vendor blobs-->
-	<project path="vendor/samsung" name="AOSP-JF-MM/proprietary_vendor_samsung" remote="github" revision="aosp-6.0-test-new-ril" />
+	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
 
 	<!-- SELinux rules -->
 	<remove-project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy" />
