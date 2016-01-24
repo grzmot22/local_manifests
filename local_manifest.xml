@@ -37,14 +37,14 @@
   <project path="external/sqlite" name="arter97/android_external_sqlite" remote="github" revision="cm-13.0" />
   <project path="external/toybox" name="temasek/android_external_toybox" remote="github" revision="cm-13.0" />
   <project path="external/wpa_supplicant_8" name="grzmot22/android_external_wpa_supplicant_8" remote="github" revision="opt-cm-13.0-temasek" />
-  <project path="packages/apps/Bluetooth" name="temasek/android_packages_apps_Bluetooth" remote="github" revision="cm-13.0" />
+  <project path="packages/apps/Bluetooth" name="grzmot22/android_packages_apps_Bluetooth" remote="github" revision="opt-cm-13.0-temasek" />
   <project path="packages/apps/PackageInstaller" name="temasek/android_packages_apps_PackageInstaller" remote="github" revision="cm-13.0" />
   <project path="packages/apps/OmniSwitch" name="temasek/android_packages_apps_OmniSwitch" remote="github" revision="cm-13.0" />
   <project path="packages/apps/InCallUI" name="temasek/android_packages_apps_InCallUI" remote="github" revision="cm-13.0" />
   <project path="packages/providers/MediaProvider" name="temasek/android_packages_providers_MediaProvider" remote="github" revision="cm-13.0" />
   <project path="packages/services/Telecomm" name="grzmot22/android_packages_services_Telecomm" remote="github" revision="cm-13.0" />
   <project path="system/bt" name="grzmot22/android_system_bt" remote="github" revision="cm-13.0" />
-  <!--<project path="system/vold" name="temasek/android_system_vold" remote="github" revision="cm-13.0" />-->
+  <project path="system/vold" name="temasek/android_system_vold" remote="github" revision="cm-13.0" />
   <project path="vendor/cmsdk" name="temasek/cm_platform_sdk" remote="github" revision="cm-13.0" />
   <!-- END of temasek -->
 
@@ -110,7 +110,7 @@
 	<!-- SELinux rules -->
 	<remove-project name="CyanogenMod/android_external_sepolicy" path="external/sepolicy" />
 	<project path="external/sepolicy" name="grzmot22/android_external_sepolicy" remote="github" revision="opt-cm-13.0-temasek" />
-	<project path="system/vold" name="grzmot22/android_system_vold" remote="github" revision="opt-cm-13.0-temasek" />
+	<!--<project path="system/vold" name="grzmot22/android_system_vold" remote="github" revision="opt-cm-13.0-temasek" />-->
 
 
 	<!-- Telephony framework  -->
