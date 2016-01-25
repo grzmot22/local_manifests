@@ -49,7 +49,7 @@
   <project path="packages/services/Telecomm" name="grzmot22/android_packages_services_Telecomm" remote="github" revision="cm-13.0" />
   <project path="system/bt" name="grzmot22/android_system_bt" remote="github" revision="opt-cm-13.0-temasek" />
   <project path="system/vold" name="temasek/android_system_vold" remote="github" revision="cm-13.0" />
-  <project path="vendor/cmsdk" name="temasek/cm_platform_sdk" remote="github" revision="cm-13.0" />
+  <project path="vendor/cmsdk" name="grzmot22/cm_platform_sdk" remote="github" revision="opt-cm-13.0-temasek" />
   <!-- END of temasek -->
 
 	<!-- Core -->
