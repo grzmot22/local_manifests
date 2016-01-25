@@ -56,9 +56,9 @@
 	<remove-project name="CyanogenMod/android_system_core" path="system/core" />
 	<project path="system/core" name="grzmot22/android_system_core" remote="github" revision="opt-cm-13.0-temasek" />
 
-	<!--libcore 
+	<!--libcore -->
 	<remove-project name="CyanogenMod/android_libcore" path="libcore" />
-	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-13.0" />-->
+	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-13.0-temasek" />
 
 	<!--Device tree-->
 	<!--<project path="device/samsung/jflte" name="grzmot22/platform_device_samsung_jflte" remote="github" revision="opt-cm-13.0-temasek" />-->
