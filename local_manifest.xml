@@ -43,7 +43,7 @@
 	<!-- Kernel (Alucard) -->
 	<project path="kernel/cr-arm-eabi-4.9.4" name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" remote="github" revision="master" />
 	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-6.0" />
-	<project path="kernel/samsung/Ramdisk" name="Alucard24/Ramdisk" remote="github" revision="aospv2-6.0" />
+	<project path="kernel/samsung/Ramdisk" name="JDCTeam/Ramdisk" remote="github" revision="alu-cm-13" />
 
 	<!-- Kernel (base) -->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
