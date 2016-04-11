@@ -33,7 +33,7 @@
         <!-- GCC -->
 	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
         <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-UBER" />
+        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-Linaro" />
 
 	<!--Hardware-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />
