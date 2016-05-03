@@ -38,11 +38,6 @@
 	<!--Hardware-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />
 	
-	<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio/default" groups="qcom,qcom_audio" />
-	<project path="hardware/qcom/audio/default" name="arco/android_hardware_qcom_audio" revision="cm-13.0-caf-8960" />
-	<project path="hardware/qcom/audio-caf/msm8960" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-13.0-caf-8960" />
-  	<project path="hardware/qcom/audio-caf/msm8994" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-13.0-caf-8994" />
-  
 	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" />
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
 
