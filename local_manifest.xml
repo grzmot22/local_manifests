@@ -8,11 +8,11 @@
 	
 	<!-- Bluetooth -->
 	<remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
-	<project path="system/bt" name="JDCTeam/android_system_bt" remote="github" revision="opt-cm-13.0-caf" />
+	<project path="system/bt" name="JDCTeam/android_system_bt" remote="github" revision="opt-cm-13.0" />
 
 	<!-- Build -->
 	<remove-project name="CyanogenMod/android_build" path="build" />
-	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-13.0" >
+	<project path="build" name="JDCTeam/android_build" remote="github" revision="opt-cm-13.0-caf" >
 	  <copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 	
