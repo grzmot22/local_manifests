@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-
+	<!--Self update this manifest-->
+	<project path=".repo/local_manifests" name="JDCTeam/local_manifests" remote="github" revision="opt-cm-13.0-caf">
+		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
+	</project>
 	
 	<!-- Bluetooth -->
 	<remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
