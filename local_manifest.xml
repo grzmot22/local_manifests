@@ -5,7 +5,10 @@
 	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="opt-cm-13.0-temasek">
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
 	</project>
-	
+	  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+           
 	<!-- Customized android_build -->
 	<remove-project name="CyanogenMod/android_build" path="build" />
 	<project path="build" name="grzmot22/android_build" remote="github" revision="opt-cm-13.0-temasek" >
@@ -17,7 +20,8 @@
   <remove-project name="CyanogenMod/android_libcore" path="libcore" />
   <remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
   <remove-project name="CyanogenMod/android_dalvik" path="dalvik" />
-  <remove-project name="CyanogenMod/android_external_libpng" path="external/libpng" />
+  <remove-project name="platform/external/conscrypt" path="external/conscrypt" />
+  <!--<remove-project name="platform/external/libpng" path="external/libpng" />-->
   <remove-project name="platform/external/jemalloc" path="external/jemalloc" />
   <remove-project name="platform/external/webp" path="external/webp" />
   <!--<remove-project name="platform/external/javasqlite" path="external/javasqlite" />-->
@@ -34,7 +38,6 @@
   <remove-project name="CyanogenMod/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" />
   <remove-project name="CyanogenMod/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" />
   <!--<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />-->
-  <!--<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" revision="cm-13.0-caf-8960" />-->
   <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
   <remove-project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" />
   <remove-project name="CyanogenMod/android_packages_apps_Dialer" path="packages/apps/Dialer" />
@@ -43,6 +46,7 @@
   <remove-project name="CyanogenMod/android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" />
   <remove-project name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" />
   <remove-project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" />
   <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" />
   <remove-project name="CyanogenMod/android_packages_apps_DeskClock" path="packages/apps/DeskClock" />
   <!--<remove-project name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" />-->
@@ -69,7 +73,8 @@
   <project path="bionic" name="temasek/android_bionic" remote="github" revision="cm-13.0" />
   <project path="bootable/recovery" name="temasek/android_bootable_recovery" remote="github" revision="cm-13.0" />
   <project path="dalvik" name="temasek/android_dalvik" remote="github" revision="cm-13.0" />
-  <project path="external/libpng" name="temasek/android_external_libpng" remote="github" revision="cm-13.0" />
+  <project path="external/conscrypt" name="temasek/android_external_conscrypt" remote="github" revision="n-3.0" />
+  <!--<project path="external/libpng" name="temasek/android_external_libpng" remote="github" revision="cm-13.0" />-->
   <project path="external/jemalloc" name="temasek/android_external_jemalloc" remote="github" revision="android-6.0" />
   <!--<project path="external/sepolicy" name="temasek/android_external_sepolicy" remote="github" revision="cm-13.0" />-->
   <project path="external/sqlite" name="temasek/android_external_sqlite" remote="github" revision="cm-13.0" />
@@ -99,6 +104,7 @@
   <project path="packages/apps/PhoneCommon" name="temasek/android_packages_apps_PhoneCommon" remote="github" revision="cm-13.0" />
   <!--<project path="packages/apps/Settings" name="temasek/android_packages_apps_Settings" remote="github" revision="cm-13.0" />-->
   <!--<project path="packages/apps/SetupWizard" name="temasek/android_packages_apps_SetupWizard" remote="github" revision="cm-13.0" />-->
+  <project path="packages/inputmethods/LatinIME" name="temasek/android_packages_inputmethods_LatinIME" remote="github" revision="cm-13.0" />
   <project path="packages/providers/ContactsProvider" name="temasek/android_packages_providers_ContactsProvider" remote="github" revision="cm-13.0" />
   <project path="packages/providers/MediaProvider" name="temasek/android_packages_providers_MediaProvider" remote="github" revision="cm-13.0" />
   <project path="packages/providers/TelephonyProvider" name="temasek/android_packages_providers_TelephonyProvider" remote="github" revision="cm-13.0" />
@@ -125,35 +131,34 @@
 	<!--libcore -->
 	<project path="libcore" name="grzmot22/android_libcore" remote="github" revision="opt-cm-13.0-temasek" />
 
-<!-- Device tree -->
+	<!-- Device tree -->
 	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-13.0" />
 	<project path="device/samsung/jflte" name="grzmot22/android_device_samsung_jflte" remote="github" revision="opt-cm-13.0" />
 	<project path="device/samsung/jf-common" name="grzmot22/android_device_samsung_jf-common" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-13.0" />
+	<project path="device/hp/pine" name="grzmot22/android_device_hp_pine" remote="github" revision="testing/cm-12.0" />
 	
-	<!--Framework -->
+	
+	<!-- Framework -->
 	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-13.0-temasek" />
 
-	<!--Packages-->
-	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0-temasek" />
+	<!-- Packages -->
+	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0-temasek" />-->
 	<project path="packages/services/Telephony" name="grzmot22/android_packages_services_Telephony" remote="github" revision="opt-cm-13.0-temasek" />
-	<project path="packages/apps/CarrierConfig" name="grzmot22/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0-temasek" />
+	<project path="packages/apps/CarrierConfig" name="grzmot22/platform_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="external/gello_build" name="CyanogenMod/android_external_gello_build" remote="github" revision="cm-13.0" />
 	<!--<project path="vendor/gello" name="CyanogenMod/android_vendor_gello" />-->
 		<!--Hardware-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />
-	
-	<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio/default" groups="qcom,qcom_audio" />
-	<project path="hardware/qcom/audio/default" name="arco/android_hardware_qcom_audio" revision="cm-13.0-caf-8960" />
-	<project path="hardware/qcom/audio-caf/msm8960" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-13.0-caf-8960" />
-  	<project path="hardware/qcom/audio-caf/msm8994" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-13.0-caf-8994" />
-  
+    <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" revision="cm-13.0-caf-8960" /> 
+    <project path="hardware/qcom/audio-caf/msm8960" name="JDCTeam/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="opt-cm-13.0-halaudio" /> 
 	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" />
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
  	
 	<!--Stock CM kernel -->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
+	<project path="kernel/hp/pine" name="grzmot22/android_kernel_hp_pine" remote="github" revision="cm-12.0" />
 
 	<!-- Setup Wizard -->
 	<project path="packages/apps/SetupWizard" name="grzmot22/android_packages_apps_SetupWizard" remote="github" revision="opt-cm-13.0-temasek" />
@@ -165,7 +170,7 @@
 	<project path="packages/apps/OTAUpdates" name="Kryten2k35/OTAUpdates" remote="github" revision="aosp" />
 
 	<!--Proprietary vendor blobs-->
-	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
+	<project path="vendor/samsung" name="grzmot22/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
 
 	<!-- SELinux rules -->
 	<project path="external/sepolicy" name="grzmot22/android_external_sepolicy" remote="github" revision="opt-cm-13.0-temasek" />
@@ -181,9 +186,12 @@
 	</project>
 
 	<!-- Alucard24 Kernel-->
-	<project path="kernel/samsung/alucard24" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-6.0" />
+	<project path="kernel/samsung/alucard24-ogr" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-6.0" />
+	<project path="kernel/samsung/alucard24" name="dkati/Alucard-Kernel-jfltexx" remote="github" revision="aosp6-qcom" />
 	<project path="kernel/samsung/Ramdisk" name="grzmot22/Ramdisk" remote="github" revision="opt-cm-13.0-temasek" /> 
-
+	<project path="kernel/lg/Alucard-Kernel-LG-G5" name="Alucard24/Alucard-Kernel-LG-G5" remote="github" revision="my-MM-v10c" />
+	<project path="kernel/lg/Ramdisk-LGG5-MM" name="Alucard24/Ramdisk-LGG5-MM" remote="github" revision="master" /> 
+	<project path="kernel/lg/aarch64-linux-android-4.9" name="UBERTC/aarch64-linux-android-4.9-kernel" remote="bitbucket" revision="master"/>
     <!-- Our UBER enhanced toolchain 
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
 	<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master"/>-->
@@ -194,7 +202,7 @@
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-Linaro" />
 <!--TWRP 
 	 <remove-project name="CyanogenMod/android_external_lz4" path="external/lz4" />
-	 <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-6.0" />
-	 <project path="external/lz4" name="omnirom/android_external_lz4" remote="github" revision="android-6.0" />	-->
-
+	 <project path="external/lz4" name="omnirom/android_external_lz4" remote="github" revision="android-6.0" />	
+	 <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-6.0" /> 
+	 <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-13.0" /> -->
 </manifest>
