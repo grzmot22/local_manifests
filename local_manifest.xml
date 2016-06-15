@@ -6,9 +6,13 @@
 		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
 	</project>
 	
-	<!-- Bluetooth -->
+	<!-- Bluetooth(System) -->
 	<remove-project name="CyanogenMod/android_system_bt" path="system/bt" />
 	<project path="system/bt" name="JDCTeam/android_system_bt" remote="github" revision="opt-cm-13.0-stable" />
+	
+	<!-- Bluetooth(App) -->
+	<remove-project name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
+	<project path="packages/apps/Bluetooth" name="JDCTeam/android_packages_apps_Bluetooth" remote="github" revision="opt-cm-13.0"/> 
 
 	<!-- Build -->
 	<remove-project name="CyanogenMod/android_build" path="build" />
