@@ -30,7 +30,7 @@
   <remove-project name="CyanogenMod/android_external_toybox" path="external/toybox" />
   <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
   <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base" />
-  <remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
+  <!--<remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />-->
   <remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
   <remove-project name="CyanogenMod/android_frameworks_opt_bluetooth" path="frameworks/opt/bluetooth" />
   <remove-project name="CyanogenMod/android_frameworks_opt_timezonepicker" path="frameworks/opt/timezonepicker" />
@@ -140,19 +140,17 @@
 	
 	
 	<!-- Framework -->
-	<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-13.0-temasek" />
+	<!--<project path="frameworks/av" name="grzmot22/android_frameworks_av" remote="github" revision="opt-cm-13.0-temasek" />-->
 	<project path="frameworks/base" name="grzmot22/android_frameworks_base" remote="github" revision="opt-cm-13.0-temasek" />
 
 	<!-- Packages -->
-	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0-temasek" />-->
+	<project path="packages/apps/Settings" name="grzmot22/android_packages_apps_Settings" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="packages/services/Telephony" name="grzmot22/android_packages_services_Telephony" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="packages/apps/CarrierConfig" name="grzmot22/platform_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="external/gello_build" name="CyanogenMod/android_external_gello_build" remote="github" revision="cm-13.0" />
 	<!--<project path="vendor/gello" name="CyanogenMod/android_vendor_gello" />-->
 		<!--Hardware-->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-13.0-caf-8960" />
-    <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" revision="cm-13.0-caf-8960" /> 
-    <project path="hardware/qcom/audio-caf/msm8960" name="JDCTeam/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="opt-cm-13.0-halaudio" /> 
 	<project path="hardware/qcom/display-caf/msm8960" name="JDCTeam/android_hardware_qcom_display" revision="opt-6.0-caf-8960" />
 	<project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="cm-13.0" />
  	
@@ -187,7 +185,8 @@
 
 	<!-- Alucard24 Kernel-->
 	<project path="kernel/samsung/alucard24-ogr" name="Alucard24/Alucard-Kernel-jfltexx" remote="github" revision="my-aospv2-6.0" />
-	<project path="kernel/samsung/alucard24" name="dkati/Alucard-Kernel-jfltexx" remote="github" revision="aosp6-qcom" />
+	<project path="kernel/samsung/alucard24-dkati" name="dkati/Alucard-Kernel-jfltexx" remote="github" revision="aosp6-qcom" />
+	<project path="kernel/samsung/alucard24" name="grzmot22/Alucard-Kernel-jfltexx" remote="github" revision="opt-cm-13.0-temasek" />
 	<project path="kernel/samsung/Ramdisk" name="grzmot22/Ramdisk" remote="github" revision="opt-cm-13.0-temasek" /> 
 	<project path="kernel/lg/Alucard-Kernel-LG-G5" name="Alucard24/Alucard-Kernel-LG-G5" remote="github" revision="my-MM-v10c" />
 	<project path="kernel/lg/Ramdisk-LGG5-MM" name="Alucard24/Ramdisk-LGG5-MM" remote="github" revision="master" /> 
