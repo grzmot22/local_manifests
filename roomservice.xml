@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="grzmot22/local_manifests" remote="github" revision="marshmallow">
-		<copyfile src="roomservice.xml" dest="roomservice.xml" />
-	</project>
-  <!-- Pyramid -->
+  <project name="grzmot22/local_manifests" path=".repo/local_manifests" remote="github" revision="marshmallow">
+    <copyfile dest="roomservice.xml" src="roomservice.xml" />
+  </project>
   <project name="ivanich/android_device_htc_pyramid" path="device/htc/pyramid" remote="github" revision="cm-13.0" />
   <project name="ivanich/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8660" remote="github" revision="cm-13.0" />
   <project name="ivanich/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8660" remote="github" revision="cm-13.0" />
   <project name="ivanich/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8660" remote="github" revision="cm-13.0" />
   <project name="ivanich/android_kernel_htc_pyramid" path="kernel/htc/pyramid" remote="github" revision="cm-13.0" />
   <project name="ivanich/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-13.0" />
-  <!--- i9100 -->
   <project name="CyanogenMod/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-13.0" />
@@ -19,37 +16,8 @@
   <project name="Lysergic-Acid/initramfs3" path="kernel/samsung/initramfs3" remote="github" revision="master" />
   <project name="Lysergic-Acid/Dorimanx-SG2-I9100-Kernel" path="kernel/samsung/Dorimanx-SG2-I9100-Kernel" remote="github" revision="master-maliv3" />
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
-  <!-- Jflte -->
-  <!--<project name="JDCTeam/android_device_samsung_jflte" path="device/samsung/jflte" remote="github" revision="opt-cm-12.1" />
-  <project name="JDCTeam/android_device_samsung_jf-common" path="device/samsung/jf-common" remote="github" revision="opt-cm-12.1" />
-  <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-12.1" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="cm-12.1-caf-8960" />
-  <project name="JDCTeam/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="opt-5.1-caf-8960" />
-  <project name="CyanogenMod/android_kernel_samsung_jf" path="kernel/samsung/jf" remote="github" revision="cm-12.1" />
-  <project name="Kryten2k35/OTAUpdates" path="packages/apps/OTAUpdates" remote="github" revision="aosp" />
-  <project name="grzmot22/android_vendor_jdc" path="vendor/jdc" remote="github" revision="opt-cm-12.1">
-    <copyfile dest="build.sh" src="build.sh" />
-  </project>
-  <project name="Alucard24/Alucard-Kernel-jfltexx" path="kernel/samsung/alucard24" remote="github" revision="my-aospv2-5.1" />
-  <project name="Alucard24/Ramdisk" path="kernel/samsung/Ramdisk" remote="github" revision="aospv2-5.1" />
-  <project name="Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9" path="kernel/cr-arm-eabi-4.9.4" remote="github" revision="master" />
-  <project name="AOSP-JF/STweaks" path="packages/apps/STweaks" remote="github" revision="aosp-5.1" />-->
-  <!-- Toolchains -->
-  <!--<project name="UBERTC/arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-eabi-6.0" path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-uber" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" remote="bitbucket" revision="master" />
-  <project name="UBERTC/arm-linux-androideabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />-->
   <project name="Lysergic-Acid/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-13.0" />
- 	<!--  JustArchi Toolchain -->
-		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="architoolchain-5.2-arm-linux-gnueabihf" />-->
-		<!--<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />-->
-		<!--<remove-project name="/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="sabermod-4.9-arm-linux-androideabi" />
-		<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-archi" remote="github" revision="architoolchain-4.9-arm-linux-gnueabihf-cortex_a9_neon" />-->
-	<!-- /JustArchiToolchain -->
-	<!--TWRP-->
-	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
-	<project path="bootable/recovery" name="JDCTeam/TWRP" remote="github" revision="master" />
- </manifest>
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" />
+  <project path="kernel/hp/pine" name="grzmot22/android_kernel_hp_pine" remote="github" revision="cm-12.0" />
+  <project path="device/hp/pine" name="grzmot22/android_device_hp_pine" remote="github" revision="testing/cm-12.0" />
+</manifest>
