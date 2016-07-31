@@ -78,5 +78,8 @@
 	<project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="opt-cm-13.0" >
 	  <copyfile src="build.sh" dest="build.sh" />
 	</project>
+	
+	<!--AROMA installer-->
+	<project path="aroma" name="dkati/Optimized-AromaInstaller" remote="github" revision="opt-cm-13.0" />
 
 </manifest>
